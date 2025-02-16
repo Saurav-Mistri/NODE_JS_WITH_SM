@@ -1,0 +1,20 @@
+{
+  "name": "npm_package",
+  "version": "1.0.0",
+  "description": "Its an amazing package.",
+  "homepage": "https://github.com/Saurav-Mistri/NODE_JS_WITH_SM#readme",
+  "bugs": {
+    "url": "https://github.com/Saurav-Mistri/NODE_JS_WITH_SM/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saurav-Mistri/NODE_JS_WITH_SM.git"
+  },
+  "license": "ISC",
+  "author": "SM",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
