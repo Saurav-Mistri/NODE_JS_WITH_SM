@@ -1,7 +1,13 @@
-data = {
-    name: "SM",
-    favNum: 21,
-    developer: true
-}
+// (function(exports, require, module, __filename, __dirname) {
+    data = {
+        name: "SM",
+        favNum: 21,
+        developer: true
+    }
 
-module.exports = data;
+    console.log(exports, require, module, __filename, __dirname);
+    
+
+module.exports = data
+
+// })
