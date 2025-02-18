@@ -21,4 +21,3 @@ server.listen(port, () => {
   console.log(`Server is listening on port! ${port}`);
 });
 
-// time stamp: 1:23:00
