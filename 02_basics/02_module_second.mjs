@@ -1,3 +1,5 @@
+// ECMA Script module
+
 // function simple(){
 //     console.log("Simple");
 // }

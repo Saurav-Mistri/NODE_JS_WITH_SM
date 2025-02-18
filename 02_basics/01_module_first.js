@@ -1,3 +1,5 @@
+// ECMA Script module
+
 // const simple2 = require("./02_module_second.mjs")
 // simple2()
 
