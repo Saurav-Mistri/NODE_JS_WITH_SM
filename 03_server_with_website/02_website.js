@@ -1,23 +1,28 @@
 const http = require("http");
+const fs = require('fs');
 
 const port = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
     console.log(req.url);
     res.setHeader("Content-Type", "text/html");
-    if(req.url=='/'){
+    if (req.url == '/') {
+        res.statusCode = 200;
+        const data = fs.readFileSync('./03_server_with_website/index.html');
+        res.end(data.toString());
+    } else if (req.url == '/cwh') {
         res.statusCode = 200;
         res.end("<h1> This is NODE JS with MR SM!</h1> <p>Hey, This is the way to create server.</p>");
-    }else if(req.url=='/about'){
+    } else if (req.url == '/about') {
         res.statusCode = 200;
         res.end("<h1> About NODE JS!</h1> <p> Hey, This is the Node JS website.</p>");
-    }else{
+    } else {
         res.statusCode = 404;
         res.end("<h1> Oops! 404 Not Found!</h1> <p> Hey, This page is not found on this server!</p>");
     }
 });
 
 server.listen(port, () => {
-  console.log(`Server is listening on port! ${port}`);
+    console.log(`Server is listening on port! ${port}`);
 });
 
